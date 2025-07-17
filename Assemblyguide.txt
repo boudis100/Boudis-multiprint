@@ -1,0 +1,9 @@
+BOUDICHANGER 4 – MONTÁŽNÍ NÁVOD
+
+1. Namontuj tělo přepínače na levý bok rámu Sovol SV06 Ace pomocí držáku „Left_Frame_Bracket“.
+2. Do horní části těla našroubuj 4× PC4-M10 push-fit konektory pro vstupy.
+3. Vlož PTFE trubky vedoucí od jednotlivých spoolů do vstupů 1–4.
+4. Na vozík připoj výstupní PTFE konektor směřující do extruderu (pravá strana).
+5. Připevni krokový motor na držák a spoj ho s vozíkem (řemenem nebo trapézovým šroubem).
+6. Připoj endstop nebo IR senzor pro detekci vloženého filamentu (volitelné).
+7. Proveď kalibraci pozic filamentu ve firmwaru (X pozice: 0, 20, 40, 60 mm).
