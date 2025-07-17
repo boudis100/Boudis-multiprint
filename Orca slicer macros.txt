@@ -1,0 +1,7 @@
+; Filament switch – Orca/Prusa Slicer post-processing
+; Nahrazuje T0–T3 makry Klipperu
+
+{if current_extruder=0}SELECT_FILAMENT FILAMENT=1
+{if current_extruder=1}SELECT_FILAMENT FILAMENT=2
+{if current_extruder=2}SELECT_FILAMENT FILAMENT=3
+{if current_extruder=3}SELECT_FILAMENT FILAMENT=4
