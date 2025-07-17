@@ -1,0 +1,78 @@
+BOUDIChanger 4 – Montážní návod
+===============================
+
+Nástroje potřebné:
+- Inbus klíč 2.5 mm a 3 mm
+- Šroubovák (křížový)
+- Kleště na filament / PTFE
+- Imbusové šrouby M3 různých délek (viz níže)
+- Ložiska 625ZZ (pokud model používá)
+- Superlepidlo (volitelně pro vedení filamentů)
+
+-------------------------------
+1. TISKNUTELNÉ DÍLY
+-------------------------------
+Vytiskni následující díly ze složky `/models/STL/`:
+- base_plate.stl
+- selector_carriage.stl
+- input_guide_left.stl
+- input_guide_right.stl
+- ptfe_output_holder.stl
+- nema17_mount.stl
+- cover.stl (volitelný)
+
+Materiál doporučen: PETG / ASA  
+Výška vrstvy: 0.2 mm  
+Výplň: 40–60 %  
+Podpěry: jen kde je potřeba
+
+-------------------------------
+2. MONTÁŽ MECHANIKY
+-------------------------------
+a) Připevni motor NEMA17 na díl `nema17_mount`  
+b) Zasuň vodicí tyče (např. 8 mm) skrz `selector_carriage`  
+c) Namontuj ložiska (pokud použitá) do `selector_carriage`  
+d) Připoj posuvný mechanismus (např. ozubený řemen nebo trapézový šroub)
+e) Uchyť `base_plate` na pevný podklad (např. stůl vedle tiskárny)
+f) Namontuj vstupní díly (`input_guide_left` + `input_guide_right`) – přímé napojení na špulky filamentů
+
+-------------------------------
+3. VSTUPY A VÝSTUPY FILAMENTŮ
+-------------------------------
+- Zafixuj 4x PC4-M10 konektory do vstupních pozic
+- Napoj 4x PTFE trubky od jednotlivých špulek
+- Výstupní trubku připoj z `ptfe_output_holder` směrem k extruderu tiskárny
+
+-------------------------------
+4. ELEKTRONIKA
+-------------------------------
+- Připoj krokový motor k MCU (Pi Pico / SKR / BTT)
+- Možnost přidat koncový spínač (pro home kalibraci)
+- Připoj sensor filamentu (volitelné, za výstupní PTFE)
+
+-------------------------------
+5. KALIBRACE POLOH
+-------------------------------
+- Pro každou filamentovou pozici změř posun v mm
+- Nastav přesné hodnoty v `SELECT_FILAMENT` makru v Klipperu
+- Otestuj pomocí:
+  - `SELECT_FILAMENT FILAMENT=1`
+  - `LOAD_FILAMENT`
+  - `UNLOAD_FILAMENT`
+
+-------------------------------
+6. UMÍSTĚNÍ V PROSTORU
+-------------------------------
+- Doporučeno umístit modul nalevo od Sovol SV06 Ace
+- Celý modul může být umístěn:
+  - Na polici/stojanu
+  - Na boční straně stolu
+  - V uzavřené skříni (s prodloužením PTFE)
+
+-------------------------------
+7. HOTOVO!
+-------------------------------
+Tvoje jednotka BoudiChanger 4 je připravena k provozu 🎉
+Další kroky:
+- Integruj slicer hook
+- Zajisti čistotu filamentů při výměně
