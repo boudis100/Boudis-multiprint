@@ -1,0 +1,18 @@
+BOUDICHANGER 4 – ZAPOJENÍ (MCU: Raspberry Pi Pico nebo jiný Klipper MCU)
+
+Motor:
+- NEMA 17 (1.8°, 200 kroků/otáčku)
+- Driver: TMC2209 (UART) nebo A4988
+- Zapojení:
+    GP0 – STEP
+    GP1 – DIR
+    GP2 – ENABLE (volitelně)
+    GND – GND
+    3.3V nebo 5V – VIO (dle typu driveru)
+
+Senzor přítomnosti filamentu (např. microswitch nebo IR):
+- GP3 – signál
+- GND – zem
+- 3.3V nebo 5V – napájení (dle typu)
+
+Poznámka: Pokud používáš CAN MCU, použij klasické piny PAx/PBx podle čipu.
