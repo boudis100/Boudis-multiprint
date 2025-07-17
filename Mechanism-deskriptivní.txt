@@ -1,0 +1,43 @@
+BOUDIChanger 4 – Mechanika přepínače
+=====================================
+
+🧱 Základní části:
+------------------
+1. **Jezdec (Carriage)** – pohyblivý díl, který se posouvá mezi 4 vstupy
+2. **Vstupní huby** – 4 fixní pozice pro PTFE trubky od 1kg špulek
+3. **Výstupní trubka** – z jezdce do extruderu
+4. **Lineární vedení** – hladké tyče 8 mm nebo ložiska
+5. **Pohon** – krokový motor + trapézový šroub / řemenice
+6. **Koncový spínač** – volitelný, pro „domácí pozici“
+
+📦 Funkční princip:
+-------------------
+- Jezdec se pohybuje po lineárním vedení pomocí krokového motoru
+- Každá pozice odpovídá jedné filamentové vstupní trubce
+- V každé pozici je v ose jezdec ↔ vstupní trubka → vytvoří průchod
+- Filament je následně zatažen přes výstupní trubku do extruderu
+
+🧩 Detail propojení:
+--------------------
+1. 4 vstupní PTFE konektory (např. PC4-M10) jsou připevněny v pevné části
+2. Výstupní konektor je součástí jezdce
+3. Vnitřní vedení mezi jezdcem a výstupem je ideálně seřízené kuželovým náběhem
+4. Přesná pozice se nastavuje v Klipper makru (např. 0 mm, 40 mm, 80 mm, 120 mm)
+
+🔩 Doporučení:
+--------------
+- Všechny PTFE spoje držet krátké, rovné, bez ostrých ohybů
+- Ideálně použít kovové matice PC4-M10 pro přesné uchycení
+- Jezdec by měl mít kuželový náběh pro samocentrování do vstupní trubky
+- Pokud se filament zasekává, přidej vnitřní vedení (např. kónus nebo trychtýř)
+
+📏 Přesnost:
+-----------
+- Každá pozice má mít jasně definovanou hodnotu v milimetrech (např. 40 mm mezi pozicemi)
+- Kalibrace se dělá posuvem jezdce a měřením ručně při první instalaci
+
+⚙️ Varianty pohonu:
+--------------------
+- Trapézový šroub s matkou – přesný, levný, pomalejší
+- GT2 řemen + kladka – rychlejší, pružnější, doporučeno s enkodérem nebo endstopem
+- CoreXY posuv – pokročilé, pokud používáš více přepínačů v sérii
