@@ -1,0 +1,22 @@
+   [ Špulky s filamenty ]
+   ┌────┬────┬────┬────┐
+   │ #1 │ #2 │ #3 │ #4 │ ← 1kg role
+   └────┴────┴────┴────┘
+       │    │    │    │
+       │    │    │    │
+     PTFE  PTFE  PTFE  PTFE
+       │    │    │    │
+       ▼    ▼    ▼    ▼
+     ┌────────────────────┐
+     │   BoudiChanger 4   │
+     │ [ Lineární selektor│
+     │   + výstupní trubka]│
+     └────────┬───────────┘
+              │
+          PTFE trubka
+              │
+              ▼
+     ┌────────────────────┐
+     │ Sovol SV06 ACE      │
+     │ [Extruder + Hotend] │
+     └────────────────────┘
